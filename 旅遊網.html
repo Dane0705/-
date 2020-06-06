@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <style>
+        body{
+            position: relative;
+        }
+        header {
+        display: table;
+        background:url("https://upload.cc/i1/2020/05/01/CJ3eGE.png") no-repeat center center ;
+        background-size: cover;
+        height: 600px;
+        width: 100%;
+        color: aliceblue;
+        }
+
+        .title{
+            color: white;
+            font-size: 40px;
+            letter-spacing: 5px;
+            font-weight: 300;
+            text-align: center;
+            padding-top: 89px;
+            padding-bottom: 96px;
+        }
+        .select{
+            text-align: center;
+        }
+        select{
+            width: 452px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.651);
+            border: 3px solid white;
+            border-radius: 5px;
+        }
+        /* famPlace */
+        #famPlace{
+            background: #FFFFFF;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+            border-radius: 5px;
+            margin-top: -60px;
+        }
+        #famPlace a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .purpleblock{
+            background-color: #8A82CC;
+        }
+        .orangeblock{
+            background-color: #FFA782;
+        }
+        .yellowblock{
+            background-color: #F5D105;
+        }
+        .blueblock{
+            background-color: #559AC8 ;
+        }
+        [class*=block]{
+            width: 130px;
+            height: 42px;
+            border-radius: 5px;
+            line-height: 42px;
+        }
+        /* separate */
+        .line{
+            width: 100%;
+            border: 1px dashed #559AC8;
+        }
+        .circle{
+            width: 24px;
+            height: 24px;
+            border: solid 1px #559AC8;
+            border-radius: 50%;
+            margin-top: -13px;
+            position: relative;
+        }
+        i{
+            position:absolute;
+            top: -7px;
+            right: 3px;
+        }
+        /* article */
+        article .JSBLOCK{
+            background: #FFFFFF;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+            margin: 0px 45px;
+        }
+        .JSONimg{
+            height: 200px;
+            position: relative;
+            background-size: cover;
+        }
+        .JStitle{
+            position: absolute;
+            bottom: 14px;
+            left: 22px;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .JSplace{
+            position: absolute;
+            bottom: 14px;
+            right: 22px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            高雄旅遊資訊
+        </div>
+        <div class="select">
+            <select name="place" id="placeId">
+                <option value="請選擇">- -請選擇行政區- -</option>
+                <option value="楠梓區">楠梓區</option>
+                <option value="左營區">左營區</option>
+                <option value="鼓山區">鼓山區</option>
+                <option value="三民區">三民區</option>
+                <option value="前金區">前金區</option>
+                <option value="新興區">新興區</option>
+                <option value="苓雅區">苓雅區</option>
+                <option value="前鎮區">前鎮區</option>
+                <option value="小港區">小港區</option>
+                <option value="旗津區">旗津區</option>
+                <option value="鳳山區">鳳山區</option>
+                <option value="仁武區">仁武區</option>
+                <option value="大樹區">大樹區</option>
+                <option value="岡山區">岡山區</option>
+                <option value="田寮區">田寮區</option>
+                <option value="梓官區">梓官區</option>
+                <option value="茄萣區">茄萣區</option>
+                <option value="美濃區">美濃區</option>
+                <option value="內門區">內門區</option>
+                <option value="杉林區">杉林區</option>
+                <option value="甲仙區">甲仙區</option>
+                <option value="六龜區">六龜區</option>
+                <option value="那瑪夏">那瑪夏</option>
+                <option value="桃源區">桃源區</option>
+                <option value="茂林區">茂林區</option>
+            </select>
+        </div>
+    </header>
+    <div id="famPlace" class="container bg-white pb-4" style="width: 900px;">
+        <div class="row">
+            <div class="col-12 my-3 pl-5 " style="font-size: 18px;">
+                熱門行政區
+            </div>
+            <div class="row mx-auto text-center" style="width: 800px;">
+                <div class="col-3 pl-4">
+                    <div class="purpleblock">
+                        <a href="#" id="yaling">苓雅區</a>
+                    </div>
+                </div>
+                <div class="col-3 pl-4">
+                    <div class="orangeblock">
+                        <a href="#" id="samemean">三銘區</a>
+                    </div>
+                </div>
+                <div class="col-3 pl-4">
+                    <div class="yellowblock">
+                        <a href="#" id="sinshing">新興區</a>
+                    </div>
+                </div>
+                <div class="col-3 pl-4">
+                    <div class="blueblock">
+                        <a href="#" id="yeanchen">鹽埕區</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="separate"style="margin-bottom: 76px;width:1000px">
+        <div class="row text-center">
+            <div class="line"></div>
+            <div class="circle d-block mx-auto">
+                <i class="fas fa-sort-down" style="color: #559AC8;font-size: 26px;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center mb-5" style="color: #8A82CC;font-size: 36px;" id="JSlead"></div>
+    <article class="container mb-5">
+        <div class="row justify-content-between" id="Card">
+            </div>
+        </div>
+    </article>
+    <footer class="container-fluid pt-3" style="background-color:#559AC8 ;">
+        <div class="row">
+            <div class="col-12 text-center text-white" style="font-size: 14px;">
+                <p>高雄旅遊網</p>
+            </div>
+            <div class="col-12 text-center" style="color:#FFD366;font-size: 14px;">
+                <p>資料來源：高雄市政府</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/旅遊網.js"></script>
+</body>
+</html>
